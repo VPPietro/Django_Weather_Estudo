@@ -12,3 +12,4 @@ class HomePage(FormView):
     # def dispatch(self, request: HttpRequest, *args: any, **kwargs: any) -> HttpResponseBase:
     #     # print(request.POST)
     #     return super().dispatch(request, *args, **kwargs)
+ 
