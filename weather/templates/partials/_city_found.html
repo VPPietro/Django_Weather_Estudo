@@ -1,0 +1,19 @@
+<div class="container col-7">
+    <div class="card mb-3" style="max-width: 600px;">
+        <div class="row g-0">
+            <div class="col-md-4 text-center">
+                <img src="http://openweathermap.org/img/wn/{{weatherapi_result.weather.0.icon}}@2x.png" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <p class="card-text mb-1 mt-1">Cidade: {{weatherapi_result.name.title}}</p>
+                    <p class="card-text mb-1 mt-1">Clima: {{weatherapi_result.weather.0.description.title}}</p>
+                    <p class="card-text mb-1 mt-1">Temperatura: {{weatherapi_result.main.temp}} °C</p>
+                    <p class="card-text mb-1 mt-1">Humidade: {{weatherapi_result.main.humidity}}%</p>
+                    <p class="card-text mb-1 mt-1">Velocidade do vento: {{weatherapi_result.wind.speed}} (metros/seg)</p>
+                    <p class="card-text mb-1 mt-1">Fuso horário: {{timezone}}h</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
